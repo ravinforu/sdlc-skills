@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Review"
+  short_description: "Find codebase gaps and prepare evidence-backed fixes"
+  default_prompt: "Use $engineering-review to review the codebase, show evidence and coverage, and create a prioritized list of fixes."

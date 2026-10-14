@@ -1,0 +1,4 @@
+interface:
+  display_name: "Onboarding"
+  short_description: "Explain a repository with clear docs and diagrams"
+  default_prompt: "Use $onboarding to explain this repository with architecture, flows, schema, APIs, frontend, and standards in plain English."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Plan"
+  short_description: "Plan feature design, security, tasks, and tests"
+  default_prompt: "Use $engineering-plan to design this feature and prepare a practical implementation plan based on the repository."
