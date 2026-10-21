@@ -8,11 +8,11 @@ Start with [Installation](docs/install.md). See [Workflow and outputs](docs/usag
 
 If you downloaded a **runtime release ZIP** rather than this source repository, it has no scripts/ directory. Use the [release ZIP installation steps](docs/install.md#install-a-runtime-release-zip) instead. The commands below are for a source clone or the complete repository ZIP.
 
-Clone the extension repository. Replace YOUR-ORG and the repository name with your actual location:
+Clone this extension repository.
 
 ```bash
-git clone https://github.com/YOUR-ORG/speckit-engineering-plan.git
-cd speckit-engineering-plan
+git clone https://github.com/ravinforu/sdlc-skills.git
+cd engineering-plan
 python3 scripts/install.py --repo /absolute/path/to/application-repository
 ```
 
