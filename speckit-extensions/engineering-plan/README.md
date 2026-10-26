@@ -12,7 +12,7 @@ Clone this extension repository.
 
 ```bash
 git clone https://github.com/ravinforu/sdlc-skills.git
-cd engineering-plan
+cd ./speckit-extensions/engineering-plan
 python3 scripts/install.py --repo /absolute/path/to/application-repository
 ```
 
