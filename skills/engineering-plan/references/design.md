@@ -13,13 +13,13 @@ Use a small change map: area, current code, planned change, reason. Identify sha
 | Architecture and module design | Responsibilities, boundaries, dependency direction, public interfaces, internal collaboration, state/lifecycle, extension points |
 | End-to-end flow | Trigger, validation, permissions, business work, transactions, external calls/events, result and failure paths |
 | Database | Current schema evidence; added/changed tables, fields, types, constraints and indexes; query changes, data invariants, migration order and compatibility |
-| API/events | Method/path or operation/topic, request/response fields, errors, auth/permissions, paging, idempotency/concurrency, versioning and consumers |
+| API/events | Apply [API and integration planning](api.md) for affected contracts, behavior and consumers; skip for changes without interface impact |
 | Frontend | User journey, routes, components, state ownership, form rules, loading/empty/error states, accessibility, API interaction and permission feedback |
 | Operations | Configuration, jobs, resource/time limits, logs/metrics/traces, rollout and recovery behavior |
 
 Mark inapplicable areas once. For database changes, inspect the active Liquibase/Flyway roots and the affected objects' full history, including later alterations, baselines, conditions and repeatables. Do not treat a model class as proof of the deployed schema. Preserve unresolved history. Use a new migration for applied history; use engine/version-correct behavior. Plan existing-data checks, staged expansion, restartable backfill/reconciliation and safe contraction when needed. Explain irreversible changes.
 
-For contracts, include a small concrete example. Do not expose internal persistence models by default. For UI work, specify observable behavior, including failed requests and stale responses, not only the component names. For events, distinguish delivery, acknowledgement and completion. State what happens when a retry repeats a side effect.
+Do not expose internal persistence models by default. For UI work, specify observable behavior, including failed requests and stale responses, not only the component names. API/event contract examples and retry behavior belong to the linked API guide.
 
 ## Use diagrams to explain the proposal
 

@@ -24,3 +24,12 @@ Feature requirements and repository evidence are the primary inputs. No single p
 ## Standalone distribution checked on 16 October 2026
 
 The standalone extension repository includes installation and release tools, without a dependency on the personal skill authoring checkout. Local checks cover separate target projects, explicit updates, runtime archives and all three tested agent integrations. No remote extension repository or release has been published by this package.
+
+## API guidance checked on 28 October 2026
+
+- [OpenAPI specification](https://spec.openapis.org/oas/v3.1.2.html): contract structure and operations. Use the target repository's supported version; this reference is not an instruction to upgrade it.
+- [HTTP semantics, RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html): method/status semantics, retry considerations and conditional requests.
+- [Problem Details, RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html): an optional HTTP error format, not a mandatory change to existing contracts.
+- [OWASP API Security Top 10](https://owasp.org/API-Security/editions/2023/en/0x11-t10/): risk prompts for permissions, resource limits and external API consumption. Apply them to actual feature evidence rather than treating every entry as a defect.
+
+The API guide expands previously brief API/event and general-security checklist items. It is conditionally loaded inside Engineering Plan; it does not add a separate skill, endpoint generator, framework or API output template.

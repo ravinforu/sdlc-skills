@@ -1,4 +1,14 @@
 interface:
-  display_name: "Engineering Plan"
-  short_description: "Plan feature design, security, tasks, and tests"
-  default_prompt: "Use $engineering-plan to design this feature and prepare a practical implementation plan based on the repository."
+  display_name: Engineering Plan
+  short_description: Guide Spec Kit design, tasks, and implementation
+  default_prompt: Use $engineering-plan throughout this Spec Kit feature, keeping
+    the spec, plan, tasks and implementation evidence linked.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

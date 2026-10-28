@@ -2,7 +2,7 @@ schema_version: "1.0"
 extension:
   id: engineering-plan
   name: Engineering Plan
-  version: "1.1.0"
+  version: "1.2.0"
   description: Architecture, design, security, standards and traceable tasks across the Spec Kit feature workflow.
 requires:
   speckit_version: ">=1.2.0,<2.0.0"

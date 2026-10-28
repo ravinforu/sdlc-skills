@@ -8,11 +8,11 @@ Start with [Installation](docs/install.md). See [Workflow and outputs](docs/usag
 
 If you downloaded a **runtime release ZIP** rather than this source repository, it has no scripts/ directory. Use the [release ZIP installation steps](docs/install.md#install-a-runtime-release-zip) instead. The commands below are for a source clone or the complete repository ZIP.
 
-Clone this extension repository.
+Clone the extension repository. Replace YOUR-ORG and the repository name with your actual location:
 
 ```bash
-git clone https://github.com/ravinforu/sdlc-skills.git
-cd ./speckit-extensions/engineering-plan
+git clone https://github.com/YOUR-ORG/speckit-engineering-plan.git
+cd speckit-engineering-plan
 python3 scripts/install.py --repo /absolute/path/to/application-repository
 ```
 
@@ -46,7 +46,7 @@ Twelve before/after hooks invoke eleven commands. They extend the normal Spec Ki
 
 ## Compatibility
 
-Version 1.1.0 is the standalone repository distribution. The extension ID remains `engineering-plan`, so existing installations can be updated in place. Tested with Spec Kit 1.2.0, with a declared range of >=1.2.0,<2.0.0. Verify hooks when changing Spec Kit versions. The installer needs Python 3.10+ and an existing `specify` executable; the extension's commands themselves are Markdown.
+Version 1.2.0 adds conditional API and integration planning guidance to the standalone repository distribution. The extension ID remains `engineering-plan`, so existing installations can be updated in place. Tested with Spec Kit 1.2.0, with a declared range of >=1.2.0,<2.0.0. Verify hooks when changing Spec Kit versions. The installer needs Python 3.10+ and an existing `specify` executable; the extension's commands themselves are Markdown.
 
 The package includes tests for Copilot, Claude Code and Codex integration registration. Local tests do not prove that a coding agent follows every hook. Run a representative feature in your own setup.
 

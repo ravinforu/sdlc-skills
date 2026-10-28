@@ -133,7 +133,7 @@ class ExtensionChecks(unittest.TestCase):
         update=self.install(project,'--update')
         self.assertEqual(update.returncode,0,update.stdout+update.stderr)
         self.assertEqual(sentinel.read_text(),'Existing feature.\n')
-        self.assertEqual(ExtensionManifest(project/'.specify/extensions/engineering-plan/extension.yml').version,'1.1.0')
+        self.assertEqual(ExtensionManifest(project/'.specify/extensions/engineering-plan/extension.yml').version,'1.2.0')
 
     def test_targets_must_be_initialized_and_separate(self):
         for target in (self.base/'missing',ROOT,ROOT/'application',ROOT.parent):

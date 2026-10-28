@@ -65,6 +65,8 @@ Show affected components and their proposed collaboration. Include before/after 
 
 Specify changed API contracts, data structures/migrations, frontend states, background jobs, integrations, configuration and deployment steps. Describe the change at field/interface level so engineers do not have to guess. Label new file paths as planned and existing paths as inspected. Apply the design checklist in the reference. Use one main home for each proposed contract or diagram.
 
+When the feature changes API behavior, contracts, access rules or an external integration, read [API and integration planning](references/api.md). Apply its relevant contract, consumer compatibility, permission, retry and verification checks through planning and implementation. Skip it when no interface is affected; do not introduce a separate API skill or extra API document by default.
+
 ## 4. Plan security and reliability
 
 Identify actors, assets, entry points and trust boundaries for this feature. For each credible misuse/failure case, name the control, where it belongs, and how a test will prove it works. Cover authentication versus permission checks, tenant/object access, validation, secrets, sensitive outputs/logs, abuse/resource limits and dependency risks as applicable.
@@ -94,5 +96,6 @@ For an updated plan, reuse its feature folder, compare current code and requirem
 - [Spec Kit stages](references/speckit.md): Required stage behavior, file ownership, constitution and installation resources.
 
 - [Feature design](references/design.md): Architecture, contracts, data, UI, patterns and security design.
+- [API and integration planning](references/api.md): Conditional detail for affected interfaces, consumers, permissions, failures and contract checks.
 - [Implementation plan](references/implementation.md): Work breakdown, tests and rollout.
 - [Sources](references/sources.md): Background and official references.

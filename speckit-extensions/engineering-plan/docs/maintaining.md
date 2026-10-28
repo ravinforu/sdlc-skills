@@ -36,23 +36,23 @@ Review installation warnings and check real agent behavior with a sample feature
 
 ## Release
 
-The initial standalone version is 1.1.0. The release packager reads the manifest version and includes only extension runtime content and user documentation, with checksums. It excludes Git history, CI, tests, maintainer scripts and local environments. It refuses to overwrite existing archives.
+The current version is 1.2.0. Version 1.1.0 introduced the standalone distribution; 1.2.0 adds API planning guidance. The release packager reads the manifest version and includes only extension runtime content and user documentation, with checksums. It excludes Git history, CI, tests, maintainer scripts and local environments. It refuses to overwrite existing archives.
 
 ```bash
 python3 scripts/package.py --output dist
 ```
 
-This creates `dist/engineering-plan-v1.1.0.zip` and its `.sha256` file for the current version. Verify your source changes, then tag and push that version:
+This creates `dist/engineering-plan-v1.2.0.zip` and its `.sha256` file for the current version. Verify your source changes, then tag and push that version:
 
 ```bash
-git tag v1.1.0
-git push origin v1.1.0
+git tag v1.2.0
+git push origin v1.2.0
 ```
 
 Create a release for the tag and upload the generated ZIP and checksum. A public release can be installed from a target repository with:
 
 ```bash
-specify extension add engineering-plan --from https://github.com/YOUR-ORG/speckit-engineering-plan/releases/download/v1.1.0/engineering-plan-v1.1.0.zip
+specify extension add engineering-plan --from https://github.com/YOUR-ORG/speckit-engineering-plan/releases/download/v1.2.0/engineering-plan-v1.2.0.zip
 ```
 
 Replace YOUR-ORG and all version occurrences with your actual release details. This URL will not work until you publish that release. For private repositories, the documented baseline is authorized Git clone plus local installation; do not assume a browser-authenticated private release URL works with the CLI.

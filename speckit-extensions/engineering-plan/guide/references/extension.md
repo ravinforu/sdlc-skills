@@ -11,3 +11,5 @@ Before hooks prepare stage-specific guidance without changing the feature. After
 This extension does not replace core templates, require an API key, launch a background agent, or run a CI gate. It uses the active coding agent session. Mandatory means optional: false in Spec Kit’s hook configuration; actual execution still depends on the coding agent and current generated core commands. Verify the transcript and artifacts on a sample feature. Keep Engineering Review’s CI gate separate.
 
 When migrating, remove only the older engineering-plan preset with the supported preset remove command. Run the extension’s configure command to update its managed constitution/agent guidance without replacing unrelated text. Do not delete existing feature documents or other extensions. Spec Kit preserves user-modified generated commands in some update paths; review any conflicts before claiming all stages are wired.
+
+The separately distributed skill ZIP contains the planning guide and references, not the personal authoring exporter or legacy preset. Use the extension repository ZIP for Spec Kit installation and maintenance. Both distributions share the same API guidance.
